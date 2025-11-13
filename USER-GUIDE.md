@@ -805,4 +805,12 @@ Congratulations! You now know how to use Content Guardian from start to finish.
 6. **Settings** – Settings tab
 7. **Regular maintenance** – Weekly checkup
 
+   <img width="1179" height="822" alt="Screenshot 2025-11-13 at 13 03 16" src="https://github.com/user-attachments/assets/7b0e7a2d-7326-4218-a925-8f441f1247f7" />
+<img width="1127" height="940" alt="Screenshot 2025-11-13 at 13 03 10" src="https://github.com/user-attachments/assets/183515e1-7a30-471a-b8aa-e4b3898fad8d" />
+<img width="1292" height="938" alt="Screenshot 2025-11-13 at 13 03 04" src="https://github.com/user-attachments/assets/a1cdd02f-ad34-48b3-8aac-957d2d519686" />
+<img width="1125" height="1234" alt="Screenshot 2025-11-13 at 13 02 45" src="https://github.com/user-attachments/assets/be1256d7-238b-4dfa-a5b9-82ca7c0cef8e" />
+<img width="1652" height="1247" alt="Screenshot 2025-11-13 at 13 02 41" src="https://github.com/user-attachments/assets/fef256e5-87f5-4a76-b082-041948afd35e" />
+<img width="1503" height="1234" alt="Screenshot 2025-11-13 at 13 02 37" src="https://github.com/user-attachments/assets/32de2c80-b489-4aea-a19e-5afa5dc478f6" />
+
+
 **Good luck cleaning up your Confluence workspace! 🚀**
