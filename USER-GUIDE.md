@@ -1,93 +1,50 @@
-# 📚 Content Guardian - Návod k použití
+# 📚 Content Guardian - User Guide
 
-**Pro uživatele, kteří o aplikaci nic neví**
+**For users who know nothing about the app**
 
-Vítejte! Tento návod vás provede instalací a používáním Content Guardian krok za krokem. Nepotřebujete žádné technické znalosti.
+Welcome! This guide will walk you step-by-step through installing and using Content Guardian. No technical knowledge required.
 
----
+***
 
-## 🤔 Co je Content Guardian?
+## 🤔 What is Content Guardian?
 
-**Jednoduše řečeno:**
-Content Guardian je aplikace pro Confluence, která automaticky najde problémy ve vaší dokumentaci a pomůže vám je vyřešit.
+**Simply put:**
+Content Guardian is a Confluence app that automatically finds issues in your documentation and helps you fix them.
 
-**Jaké problémy najde?**
-- 📅 **Zastaralé stránky** - Stránky, které nebyly dlouho aktualizovány
-- 👀 **Nečtené stránky** - Stránky, které nikdo nečte
-- 🔗 **Osiřelé stránky** - Stránky, na které nikde není odkaz
-- ✏️ **Neúplné stránky** - Stránky s málo obsahem
+**What kind of issues does it find?**
+- 📅 **Outdated pages** – Pages that haven’t been updated for a long time
+- 👀 **Unread pages** – Pages that nobody reads
+- 🔗 **Orphaned pages** – Pages nobody links to
+- ✏️ **Incomplete pages** – Pages with very little content
 
-**Proč to potřebuji?**
-- Confluence časem zaplevelí starými stránkami
-- Těžko se hledá důležitá dokumentace mezi nepotřebnou
-- Nejste si jistí, co můžete smazat a co ne
-- Content Guardian vám ukáže přesně, co je problém a pomůže ho vyřešit
+**Why do I need this?**
+- Your Confluence becomes cluttered with old pages over time
+- It’s hard to find important docs among unneeded ones
+- You're unsure what you can safely delete
+- Content Guardian shows you exactly what’s a problem and helps you handle it
 
----
+***
 
-## 📋 Krok 1: Instalace aplikace
 
-### Co potřebujete:
-- Confluence Cloud (funguje jen v cloudu, ne na serveru)
-- Oprávnění instalovat aplikace (Confluence admin)
-- Email pro registraci: tom28881@gmail.com
+## 🚀 Step 1: First Launch
 
-### Jak nainstalovat:
+### How to open the app:
 
-#### Možnost A: Z Atlassian Marketplace (Doporučeno)
+1. **In Confluence, open the Apps menu**
+   - In the top bar, find **Apps**
+   - Click the arrow beside “Apps”
+   - Dropdown menu appears
 
-1. **Otevřete Confluence**
-   - Jděte na váš Confluence workspace
-   - Např: `https://vase-firma.atlassian.net/wiki`
+2. **Find Content Guardian**
+   - Find **Content Guardian** in the list of apps
+   - Click it
 
-2. **Najděte Apps (Aplikace)**
-   - V horním menu klikněte na **⚙️ Settings** (Nastavení)
-   - V levém menu klikněte na **Find new apps** (Najít nové aplikace)
+3. **App opens**
+   - A new page with the app loads
+   - It can take 2–5 seconds
+   - You’ll see the main dashboard
 
-3. **Vyhledejte Content Guardian**
-   - Do vyhledávacího pole napište: `Content Guardian`
-   - Klikněte na aplikaci "Content Guardian for Confluence"
-
-4. **Nainstalujte**
-   - Klikněte na tlačítko **Install** (Instalovat)
-   - Počkejte 30-60 sekund
-   - Zobrazí se zpráva "Installation successful" (Instalace úspěšná)
-
-5. **Hotovo!**
-   - Aplikace je nainstalovaná a připravená k použití
-
-#### Možnost B: Přímá instalace z Developer Console
-
-1. Jděte na: https://developer.atlassian.com/console
-2. Přihlaste se emailem: tom28881@gmail.com
-3. Najděte "Content Guardian"
-4. Klikněte "Install"
-5. Vyberte váš Confluence workspace
-6. Potvrďte instalaci
-
----
-
-## 🚀 Krok 2: První spuštění
-
-### Jak otevřít aplikaci:
-
-1. **V Confluence, otevřete Apps menu:**
-   - V horní liště najděte **Apps** (Aplikace)
-   - Klikněte na šipku vedle "Apps"
-   - Zobrazí se dropdown menu
-
-2. **Najděte Content Guardian:**
-   - V seznamu aplikací najděte **Content Guardian**
-   - Klikněte na něj
-
-3. **Aplikace se otevře:**
-   - Zobrazí se nová stránka s aplikací
-   - Může to trvat 2-5 sekund
-   - Uvidíte dashboard (hlavní obrazovku)
-
-### Co uvidíte poprvé:
-
-První spuštění aplikace vypadá takhle:
+### First launch illustration:
 
 ```
 ╔══════════════════════════════════════════╗
@@ -96,51 +53,51 @@ První spuštění aplikace vypadá takhle:
 ║  Problem Pages: 0                        ║
 ║  Impact Score: 0                         ║
 ║                                          ║
-║  [Scan Now] - Klikněte pro první scan   ║
+║  [Scan Now] - Click to run first scan    ║
 ╚══════════════════════════════════════════╝
 ```
 
-**Proč jsou čísla nula?**
-- Aplikace ještě neproběhla žádný scan
-- Musíte spustit první detekci ručně
+**Why are numbers zero?**
+- No scans have been run yet
+- You need to start the first detection manually
 
----
+***
 
-## 🔍 Krok 3: První scan (Detekce problémů)
+## 🔍 Step 2: First Scan (Issue Detection)
 
-### Jak spustit scan:
+### How to initiate a scan:
 
-1. **Na Dashboard obrazovce:**
-   - Najděte tlačítko **"Scan Now"** (Skenovat teď)
-   - Klikněte na něj
+1. **On the Dashboard screen:**
+   - Find the **“Scan Now”** button
+   - Click it
 
-2. **Scan začne:**
-   - Zobrazí se loading animace
-   - Vidíte: "Scanning pages..." (Skenuji stránky...)
-   - Trvá to 10-60 sekund (závisí na počtu stránek)
+2. **Scan starts:**
+   - Loading animation appears
+   - See: “Scanning pages...”
+   - Takes 10–60 seconds (depends on number of pages)
 
-3. **Scan skončí:**
-   - Čísla na dashboardu se aktualizují
-   - Uvidíte počet problémových stránek
-   - Zobrazí se graf s rozložením problémů
+3. **Scan finishes:**
+   - Numbers on the dashboard update
+   - See the number of problematic pages
+   - Graph with problem breakdown appears
 
-### Co znamenají čísla:
+### What the numbers mean:
 
-**Problem Pages (Problémové stránky):**
-- Počet stránek, které mají nějaký problém
-- Např: **15** = našlo se 15 problémových stránek
+**Problem Pages:**
+- Number of pages with any issue
+- Example: **15** = 15 problem pages found
 
-**Impact Score (Skóre dopadu):**
-- Celkové číslo vyjadřující závažnost
-- Čím vyšší, tím víc problémů
-- Např: **285** = hodně problémů
+**Impact Score:**
+- Total value indicating severity
+- Higher means more issues
+- Example: **285** = lots of problems
 
-**Breakdown Chart (Graf rozložení):**
-- Barevný koláčový graf
-- Ukazuje, jaké typy problémů jsou nejčastější
-- Každá barva = jeden typ problému
+**Breakdown Chart:**
+- Colorful pie chart
+- Shows which types of problems are most common
+- Each color = one problem type
 
-### Příklad výsledků po prvním scanu:
+### Example scan result:
 
 ```
 ╔══════════════════════════════════════════╗
@@ -159,71 +116,71 @@ První spuštění aplikace vypadá takhle:
 ╚══════════════════════════════════════════╝
 ```
 
----
+***
 
-## 📊 Krok 4: Prohlížení problémových stránek
+## 📊 Step 3: Viewing Problematic Pages
 
-### Jak zobrazit seznam:
+### How to view the list:
 
-1. **Klikněte na záložku "Detected Pages"** (Detekované stránky)
-   - Je to druhá záložka nahoře
-   - Zobrazí se tabulka se všemi problémovými stránkami
+1. **Click the “Detected Pages” tab**
+   - It’s the second tab at the top
+   - Table with all problematic pages appears
 
-2. **Co vidíte v tabulce:**
+2. **What’s in the table:**
 
-| Sloupec | Co znamená | Příklad |
-|---------|------------|---------|
-| **Title** | Název stránky | "Meeting Notes 2022" |
-| **Space** | V jakém prostoru je | "IT Team" |
-| **Last Updated** | Kdy byla naposledy upravena | "2 years ago" |
-| **Views** | Kolik lidí ji vidělo (za 90 dní) | "5 views" |
-| **Problems** | Jaké má problémy | "Stale, Inactive" |
-| **Impact** | Jak moc je to problém (1-100) | "35" |
-| **Status** | Co s tím bylo uděláno | "New" (nové) |
+| Column        | Meaning                    | Example                  |
+|--------------|----------------------------|--------------------------|
+| **Title**    | Page title                 | “Meeting Notes 2022”     |
+| **Space**    | Which space                | “IT Team”                |
+| **Last Updated** | When it was last edited | “2 years ago”            |
+| **Views**    | How many people viewed (90 days) | “5 views”      |
+| **Problems** | What issues it has         | “Stale, Inactive”        |
+| **Impact**   | Severity (1–100)           | “35”                     |
+| **Status**   | Action status              | “New”                    |
 
-### Jak filtrovat a hledat:
+### How to filter and search:
 
-**Filtr podle typu problému:**
-1. Nahoře nad tabulkou jsou tlačítka:
-   - 🟡 **Stale** - Zobrazit jen zastaralé stránky
-   - 🔵 **Inactive** - Zobrazit jen nečtené stránky
-   - 🟢 **Orphaned** - Zobrazit jen osiřelé stránky
-   - 🟣 **Incomplete** - Zobrazit jen neúplné stránky
-2. Klikněte na tlačítko typu, který chcete vidět
-3. Tabulka se vyfiltruje
+**Filter by problem type:**
+1. Buttons above the table:
+   - 🟡 **Stale** – Only outdated pages
+   - 🔵 **Inactive** – Only unread pages
+   - 🟢 **Orphaned** – Only orphaned pages
+   - 🟣 **Incomplete** – Only incomplete pages
+2. Click a type to filter
+3. Table updates to show only selected type
 
-**Vyhledávání:**
-1. Najděte vyhledávací pole nahoře
-2. Napište název stránky, kterou hledáte
-3. Výsledky se zobrazí okamžitě
+**Search:**
+1. Find search box at the top
+2. Enter page title you’re looking for
+3. Results appear instantly
 
-**Třídění:**
-1. Klikněte na hlavičku sloupce (např. "Last Updated")
-2. Tabulka se setřídí podle toho sloupce
-3. Klikněte znovu pro obrácení pořadí
+**Sorting:**
+1. Click column header (e.g. “Last Updated”)
+2. Table sorts by that column
+3. Click again to reverse order
 
-### Jak otevřít stránku v Confluence:
+### How to open a page in Confluence:
 
-- V sloupci "Title" klikněte na název stránky
-- Otevře se nová karta s tou stránkou v Confluence
-- Můžete si ji přečíst a rozhodnout, co s ní uděláte
+- In "Title" column, click the page name
+- New browser tab opens the page in Confluence
+- You can read and decide what to do with it
 
----
+***
 
-## ✅ Krok 5: Zpracování stránek (Co s nimi?)
+## ✅ Step 4: Processing Pages (What now?)
 
-Teď máte seznam problémových stránek. Co dál?
+Now you have a list of problem pages. What next?
 
-### Možnost A: Bulk Review (Hromadné zpracování)
+### Option A: Bulk Review
 
-**Nejlepší pro:** Když máte hodně stránek a chcete je projít jednu po jedné
+**Best for:** Lots of pages, want to go through one by one
 
-#### Jak to funguje:
+#### How it works:
 
-1. **Klikněte na záložku "Bulk Review"** (Hromadné zpracování)
-   - Je to třetí záložka nahoře
+1. **Click the “Bulk Review” tab**
+   - Third tab at the top
 
-2. **Uvidíte detail první problémové stránky:**
+2. **First problem page details show:**
    ```
    ╔══════════════════════════════════════════╗
    ║  Page 1 of 47                             ║
@@ -244,106 +201,106 @@ Teď máte seznam problémových stránek. Co dál?
    ╚══════════════════════════════════════════╝
    ```
 
-3. **Přečtěte si informace o stránce**
-   - Klikněte na "Open in Confluence" pro zobrazení stránky
-   - Rozhodněte se, co s ní uděláte
+3. **Read about the page**
+   - Click “Open in Confluence” to view it
+   - Decide what to do
 
-4. **Vyberte akci:**
+4. **Select action:**
 
-#### 🟢 **Keep (Tag)** - Ponechat (Označit jako zkontrolováno)
-**Kdy použít:**
-- Stránka je stále důležitá a platná
-- Potřebuje jen aktualizovat obsah
-- Nechcete ji smazat ani archivovat
+#### 🟢 **Keep (Tag)**
+**When to use:**
+- Page is still valid and important
+- Maybe just needs an update
+- You don’t want to delete or archive it
 
-**Co se stane:**
-- Stránka zůstane v Confluence beze změny
-- Označí se jako "Tagged" (Zkontrolováno)
-- Příště při scanu se nezobrazí jako "New"
-- Můžete přidat poznámku, proč jste ji nechali
+**What happens:**
+- Page stays in Confluence
+- Marked as “Tagged” (Checked)
+- Will not appear as “New” in next scan
+- You can add a note for audit trail
 
-**Příklad:**
+**Example:**
 ```
-Stránka: "API Documentation v2"
-Důvod: "Still valid, team uses this daily"
-Akce: Keep (Tag)
-```
-
-#### ⚪ **Add to Whitelist** - Přidat na whitelist
-**Kdy použít:**
-- Stránka je důležitá, ale může vypadat jako problémová
-- Např. šablony, landing pages, archivní dokumenty
-- Nikdy ji nechcete vidět v seznamu problémů
-
-**Co se stane:**
-- Stránka se přidá na whitelist
-- Budoucí scany ji přeskočí
-- Nebude se zobrazovat jako problémová
-- Můžete ji odebrat z whitelistu v Settings
-
-**Příklad:**
-```
-Stránka: "Page Template - Do Not Edit"
-Důvod: "This is a template, should never be flagged"
-Akce: Add to Whitelist
+Page: “API Documentation v2”
+Reason: “Still valid, team uses this daily”
+Action: Keep (Tag)
 ```
 
-#### 🟠 **Archive** - Archivovat
-**Kdy použít:**
-- Stránka je zastaralá a nepotřebná
-- Obsah už není platný
-- Nikdo ji nečte
-- Ale nechcete ji smazat úplně (může být potřeba později)
+#### ⚪ **Add to Whitelist**
+**When to use:**
+- Page is important but might look like a problem
+- e.g. templates, landing pages, archived docs
+- You never want it flagged as a problem
 
-**Co se stane:**
-- Stránka se přesune do archivu v Confluence
-- Zmizí z běžného vyhledávání
-- Stále existuje a lze ji obnovit
-- Neukazuje se běžným uživatelům
+**What happens:**
+- Added to whitelist
+- Future scans skip it
+- Will not show as problematic
+- You can remove from whitelist in Settings
 
-**Příklad:**
+**Example:**
 ```
-Stránka: "Meeting Notes - January 2022"
-Důvod: "Obsolete meeting notes, no longer relevant"
-Akce: Archive
-```
-
-#### ⏭️ **Skip** - Přeskočit
-**Kdy použít:**
-- Nejste si jistí, co s tím
-- Chcete se k tomu vrátit později
-- Potřebujete konzultovat s někým jiným
-
-**Co se stane:**
-- Přejdete na další stránku
-- Tato stránka zůstane jako "New"
-- Zobrazí se znovu při příštím použití Bulk Review
-
-**Příklad:**
-```
-Rozhodování: "Not sure if this is still needed"
-Akce: Skip (vrátím se k tomu)
+Page: “Page Template - Do Not Edit”
+Reason: “This is a template, should never be flagged”
+Action: Add to Whitelist
 ```
 
-#### ⬅️ **Back** - Zpět
-**Kdy použít:**
-- Chcete se vrátit k předchozí stránce
-- Udělali jste chybu a chcete ji opravit
+#### 🟠 **Archive**
+**When to use:**
+- Page is obsolete and no longer needed
+- Content is outdated or incorrect
+- Nobody reads it
+- But you don’t want to completely delete (might need it someday)
 
-**Co se stane:**
-- Vrátíte se o jednu stránku zpět
-- Můžete změnit předchozí rozhodnutí
+**What happens:**
+- Page is moved to Confluence archive
+- No longer appears in standard search
+- Still exists, can be restored
+- Not shown to regular users
 
-5. **Potvrzení akce:**
+**Example:**
+```
+Page: “Meeting Notes - January 2022”
+Reason: “Obsolete meeting notes, no longer relevant”
+Action: Archive
+```
 
-Po kliknutí na akci (kromě Skip a Back) se zobrazí potvrzovací okno:
+#### ⏭️ **Skip**
+**When to use:**
+- Not sure what to do
+- Want to decide later
+- Need to discuss with someone
+
+**What happens:**
+- Move to next page
+- Current page stays as “New”
+- Will show up again in next Bulk Review
+
+**Example:**
+```
+Decision: “Not sure if this is still needed”
+Action: Skip (will return to it)
+```
+
+#### ⬅️ **Back**
+**When to use:**
+- Want to return to previous page
+- Made a mistake, want to correct it
+
+**What happens:**
+- Go back to previous page
+- Can change previous decision
+
+5. **Confirm action:**
+
+After clicking (except Skip and Back) a confirmation box appears:
 
 ```
 ╔══════════════════════════════════════════╗
 ║  Confirm Action                          ║
 ║                                          ║
 ║  Action: Archive                         ║
-║  Page: Meeting Notes - Q1 2022          ║
+║  Page: Meeting Notes - Q1 2022           ║
 ║                                          ║
 ║  Reason (optional):                      ║
 ║  ┌────────────────────────────────────┐ ║
@@ -354,226 +311,225 @@ Po kliknutí na akci (kromě Skip a Back) se zobrazí potvrzovací okno:
 ╚══════════════════════════════════════════╝
 ```
 
-- **Reason (Důvod):** Volitelné pole pro vysvětlení
-  - Nemusíte vyplňovat, ale je to dobré pro audit trail
-  - Např: "No longer used", "Duplicate content", "Project cancelled"
-- **Confirm:** Potvrdit a pokračovat
-- **Cancel:** Zrušit akci
+- **Reason:** Optional field for explanation
+  - Not required, but good for audit trail
+  - Example: “No longer used”, “Duplicate content”, “Project cancelled”
+- **Confirm:** Confirm and continue
+- **Cancel:** Cancel the action
 
-6. **Automatický posun na další stránku:**
-   - Po potvrzení se automaticky zobrazí další problémová stránka
-   - Můžete pokračovat, dokud neprojedete všechny
+6. **Automatic move to next page:**
+   - After confirming, the next problem page loads
+   - Continue until done
 
-### Možnost B: Ruční zpracování z tabulky
+### Option B: Manual processing from the table
 
-**Nejlepší pro:** Když chcete zpracovat jen konkrétní stránky
+**Best for:** If you want to handle only specific pages
 
-1. V záložce "Detected Pages" najděte stránku
-2. V řádku stránky jsou malá tlačítka akcí
-3. Klikněte na akci, kterou chcete použít
-4. Potvrzení funguje stejně jako v Bulk Review
+1. In “Detected Pages” tab, find the page
+2. Action buttons are in the page’s row
+3. Click the action you want
+4. Confirmation works same as in Bulk Review
 
----
+***
 
-## 📜 Krok 6: Audit Log (Historie akcí)
+## 📜 Step 5: Audit Log (Action History)
 
-### Co je Audit Log?
+### What is the Audit Log?
 
-- Záznam všech akcí, které jste udělali
-- Kdo, kdy, co a proč
-- Důležité pro reporting a compliance
+- Record of every action you’ve performed
+- Who, when, what, and why
+- Important for reporting and compliance
 
-### Jak zobrazit:
+### How to view:
 
-1. **Klikněte na záložku "Audit Log"**
-   - Je to čtvrtá záložka
+1. **Click the “Audit Log” tab**
+   - It’s the fourth tab
 
-2. **Uvidíte tabulku s historií:**
+2. **See a table with history:**
 
-| Timestamp | User | Action | Page | Reason |
-|-----------|------|--------|------|--------|
-| Nov 13, 14:30 | Jan Novák | Archive | Meeting Notes 2022 | Obsolete |
-| Nov 13, 14:28 | Jan Novák | Keep (Tag) | API Docs v2 | Still valid |
-| Nov 13, 14:25 | Jan Novák | Whitelist | Page Template | Template |
+| Timestamp    | User      | Action         | Page           | Reason      |
+|--------------|-----------|----------------|----------------|-------------|
+| Nov 13, 14:30| Jan Novak | Archive        | Meeting Notes 2022 | Obsolete |
+| Nov 13, 14:28| Jan Novak | Keep (Tag)     | API Docs v2    | Still valid |
+| Nov 13, 14:25| Jan Novak | Whitelist      | Page Template  | Template    |
 
-### Co můžete dělat:
+### What you can do:
 
-**Filtrovat podle akce:**
-- Dropdown menu "Action"
-- Vyberte typ akce (Archive, Tag, Whitelist)
-- Zobrazí se jen ty akce
+**Filter by action:**
+- “Action” dropdown menu
+- Select action type (Archive, Tag, Whitelist)
+- Only those actions will show
 
-**Filtrovat podle uživatele:**
-- Dropdown menu "User"
-- Vyberte uživatele
-- Zobrazí se jen jejich akce
+**Filter by user:**
+- “User” dropdown menu
+- Select a user
+- Only their actions display
 
-**Hledat stránku:**
-- Vyhledávací pole
-- Napište název stránky
-- Najdete všechny akce s tou stránkou
+**Search for a page:**
+- Search box
+- Enter page name
+- Find every action associated
 
-**Export do CSV:**
-- Tlačítko "Export to CSV"
-- Stáhne se soubor s celou historií
-- Můžete otevřít v Excelu
+**Export to CSV:**
+- “Export to CSV” button
+- Downloads full history as CSV
+- Open in Excel
 
-### Proč je to užitečné:
+### Why is this useful:
 
-- **Reporting:** Ukážete manažerovi, co jste udělali
-- **Compliance:** Prokázání, že dodržujete governance
-- **Kontrola:** Zjistíte, kdo co dělal
-- **Vrácení změn:** Pokud někdo udělal chybu, víte co vrátit
+- **Reporting:** Show management what you’ve done
+- **Compliance:** Demonstrate governance processes
+- **Control:** See who did what
+- **Reversibility:** Track actions to revert mistakes
 
----
+***
 
-## ⚙️ Krok 7: Nastavení (Settings)
+## ⚙️ Step 6: Settings
 
-### Jak otevřít nastavení:
+### How to open settings:
 
-1. **Klikněte na záložku "Settings"**
-   - Je to pátá (poslední) záložka
+1. **Click the “Settings” tab**
+   - It’s the last (fifth) tab
 
-2. **Uvidíte tři sekce:**
-   - Detection Rules (Pravidla detekce)
-   - Scheduling (Plánování)
-   - Whitelist Management (Správa whitelistu)
+2. **See three sections:**
+   - Detection Rules
+   - Scheduling
+   - Whitelist Management
 
-### A) Detection Rules (Pravidla detekce)
+### A) Detection Rules
 
-**Co to je:**
-- Nastavení, co se považuje za "problém"
-- Můžete upravit podle vašich potřeb
+**What are they:**
+- Define what’s considered a “problem”
+- Adjust for your organization
 
-**Nastavení:**
+**Settings:**
 
-#### 🟡 Stale Threshold (Práh zastaralosti)
+#### 🟡 Stale Threshold
 ```
 Stale Threshold (days): [180]
 ```
-**Co to znamená:**
-- Stránky, které nebyly aktualizovány X dní
-- Výchozí: 180 dní (6 měsíců)
+**What it means:**
+- Pages not updated in X days
+- Default: 180 days (6 months)
 
-**Jak změnit:**
-- Klikněte do pole
-- Napište nové číslo
-- Např: `365` = stránky starší než rok
-- Např: `90` = stránky starší než 3 měsíce
+**How to change:**
+- Edit the field
+- Example: `365` = pages older than a year
+- Example: `90` = older than 3 months
 
-**Kdy použít:**
-- **Konzervativní org:** `365` dní - chcete zachovat víc
-- **Aktivní org:** `90` dní - očekáváte časté aktualizace
+**When to use:**
+- **Conservative org:** `365` days – keep more pages
+- **Active org:** `90` days – expect frequent updates
 
-#### 🔵 Inactive Threshold (Práh neaktivity)
+#### 🔵 Inactive Threshold
 ```
 Inactive Threshold (days): [90]
 ```
-**Co to znamená:**
-- Stránky, které nikdo neviděl X dní
-- Výchozí: 90 dní (3 měsíce)
+**What it means:**
+- Pages not viewed in X days
+- Default: 90 days (3 months)
 
-**Jak změnit:**
-- Stejně jako Stale Threshold
-- Např: `180` = 6 měsíců bez views
-- Např: `30` = měsíc bez views
+**How to change:**
+- Same as Stale Threshold
+- Example: `180` = 6 months no views
+- Example: `30` = 1 month no views
 
-#### 📊 Low View Threshold (Práh nízkých zobrazení)
+#### 📊 Low View Threshold
 ```
 Low View Count (per month): [10]
 ```
-**Co to znamená:**
-- Stránky s méně než X zobrazení za měsíc
-- Výchozí: 10 views/měsíc
+**What it means:**
+- Pages with less than X views per month
+- Default: 10 views/month
 
-**Jak změnit:**
-- Např: `5` = málo views = 5 a méně
-- Např: `20` = málo views = 20 a méně
+**How to change:**
+- Example: `5` = 5 or fewer is “low”
+- Example: `20` = 20 or fewer
 
-#### ✏️ Incomplete Threshold (Práh neúplnosti)
+#### ✏️ Incomplete Threshold
 ```
 Minimum Content Length (characters): [100]
 ```
-**Co to znamená:**
-- Stránky s méně než X znaky obsahu
-- Výchozí: 100 znaků
+**What it means:**
+- Pages with less than X characters of content
+- Default: 100 characters
 
-**Jak změnit:**
-- Např: `200` = stránky s méně než 200 znaky
-- Např: `50` = stránky s méně než 50 znaky
+**How to change:**
+- Example: `200` = less than 200 chars
+- Example: `50` = less than 50 chars
 
-**Uložení změn:**
-- Po úpravě klikněte **"Save Rules"** (Uložit pravidla)
-- Nové pravidla se použijí při příštím scanu
+**Saving changes:**
+- After editing, click **"Save Rules"**
+- Changes apply at next scan
 
-### B) Scheduling (Plánování automatických scanů)
+### B) Scheduling (Automatic Scans)
 
-**Co to je:**
-- Automatické spouštění scanů
-- Nemusíte klikat "Scan Now" ručně
+**What is it:**
+- Automatically runs scans
+- No need to click “Scan Now” manually
 
-**Možnosti:**
+**Options:**
 
-#### ⏸️ Manual Only (Jen ručně)
+#### ⏸️ Manual Only
 ```
 [✓] Manual Only - Scan only when I click "Scan Now"
 ```
-**Výchozí nastavení**
-- Scany spouštíte sami
-- Vhodné pro začátečníky
+**Default setting**
+- You run scans yourself
+- Good for beginners
 
-#### 📅 Daily (Denně)
+#### 📅 Daily
 ```
-[ ] Daily at: [09:00] (time picker)
+[ ] Daily at: [09:00]
 ```
-**Kdy použít:**
-- Aktivní workspace s častými změnami
-- Chcete vidět problémy každý den
+**When to use:**
+- Active workspace with many changes
+- Want daily issues report
 
-**Jak nastavit:**
-1. Zaškrtněte "Daily"
-2. Vyberte čas (např. 09:00)
-3. Scan proběhne každý den v ten čas
+**How to set up:**
+1. Check “Daily”
+2. Choose time (e.g., 09:00)
+3. Scan runs daily at chosen time
 
-#### 📆 Weekly (Týdně)
+#### 📆 Weekly
 ```
 [ ] Weekly on: [Monday ▼] at [09:00]
 ```
-**Kdy použít:**
-- Běžné workspaces
-- **Doporučené nastavení**
+**When to use:**
+- Standard workspaces
+- **Recommended**
 
-**Jak nastavit:**
-1. Zaškrtněte "Weekly"
-2. Vyberte den v týdnu (např. Monday)
-3. Vyberte čas (např. 09:00)
-4. Scan proběhne každé pondělí v 9:00
+**How to set up:**
+1. Check “Weekly”
+2. Choose a day (e.g., Monday)
+3. Choose a time (e.g., 09:00)
+4. Scan runs weekly at set time
 
-#### 🗓️ Monthly (Měsíčně)
+#### 🗓️ Monthly
 ```
 [ ] Monthly on day: [1] at [09:00]
 ```
-**Kdy použít:**
-- Méně aktivní workspaces
-- Kontrola jednou za měsíc stačí
+**When to use:**
+- Less active workspaces
+- Monthly check is enough
 
-**Jak nastavit:**
-1. Zaškrtněte "Monthly"
-2. Vyberte den v měsíci (1-28)
-3. Vyberte čas
-4. Scan proběhne každý měsíc v ten den
+**How to set up:**
+1. Check “Monthly”
+2. Set day (1–28)
+3. Choose time
+4. Scan runs monthly at chosen day
 
-**Uložení:**
-- Klikněte **"Save Schedule"** (Uložit plán)
-- Zobrazí se "Next scheduled scan: Monday, Nov 18, 09:00"
+**Saving:**
+- Click **"Save Schedule"**
+- See: “Next scheduled scan: Monday, Nov 18, 09:00”
 
-### C) Whitelist Management (Správa whitelistu)
+### C) Whitelist Management
 
-**Co to je:**
-- Seznam stránek, které Content Guardian přeskočí
-- Nikdy se neobjeví jako problémové
+**What is it:**
+- List of pages Content Guardian will skip
+- Never flagged as problems
 
-**Jak zobrazit whitelist:**
+**How to view whitelist:**
 ```
 ╔══════════════════════════════════════════╗
 ║  Whitelisted Pages (5)                   ║
@@ -589,203 +545,175 @@ Minimum Content Length (characters): [100]
 ╚══════════════════════════════════════════╝
 ```
 
-**Jak přidat stránku na whitelist:**
+**How to add a page to whitelist:**
 
-**Možnost 1: Z Bulk Review nebo Detected Pages**
-- Použijte tlačítko "Add to Whitelist"
-- (Nejjednodušší způsob)
+**Option 1: From Bulk Review or Detected Pages**
+- Use “Add to Whitelist” button
+- (Easiest way)
 
-**Možnost 2: Ručně v Settings**
-1. V sekci "Whitelist Management"
-2. Najděte pole "Add Page to Whitelist"
-3. Vložte URL nebo ID stránky
-4. Klikněte "Add"
+**Option 2: Manually in Settings**
+1. In “Whitelist Management”
+2. Find “Add Page to Whitelist” field
+3. Enter page URL or ID
+4. Click “Add”
 
-**Jak odebrat stránku z whitelistu:**
-1. V seznamu whitelistovaných stránek
-2. Najděte stránku, kterou chcete odebrat
-3. Klikněte "Remove from Whitelist"
-4. Při příštím scanu se může objevit jako problémová
+**How to remove from whitelist:**
+1. In whitelisted pages list
+2. Find the page you want to remove
+3. Click “Remove from Whitelist”
+4. Can reappear as a problem in next scan
 
-**Export/Import whitelistu:**
+**Export/Import whitelist:**
 ```
 [Export Whitelist to CSV]  [Import from CSV]
 ```
-- **Export:** Stáhne seznam jako CSV soubor
-- **Import:** Nahraje CSV soubor s URL stránek
+- **Export:** Download as CSV
+- **Import:** Upload a CSV with page URLs
 
----
+***
 
-## 🔄 Krok 8: Pravidelná údržba (Best Practices)
+## 🔄 Step 7: Ongoing Maintenance (Best Practices)
 
-### Doporučený workflow:
+### Recommended workflow:
 
-#### **První použití (Den 1):**
-1. ✅ Nainstalujte aplikaci
-2. ✅ Spusťte první scan
-3. ✅ Prohlédněte si výsledky v "Detected Pages"
-4. ✅ Přidejte důležité stránky (šablony, landing pages) na whitelist
-5. ✅ Zpracujte 5-10 stránek v Bulk Review (vyzkoušejte funkcionalitu)
+#### **First use (Day 1):**
+1. ✅ Install the app
+2. ✅ Run first scan
+3. ✅ Review results in “Detected Pages”
+4. ✅ Add important pages (templates, landing pages) to whitelist
+5. ✅ Process 5–10 pages in Bulk Review (try the functions)
 
-#### **První týden:**
-1. ✅ Projděte všechny problémové stránky v Bulk Review
-2. ✅ Archivujte zjevně zastaralé stránky
-3. ✅ Označte důležité stránky jako "Tagged"
-4. ✅ Přidejte další stránky na whitelist podle potřeby
-5. ✅ Nastavte týdenní automatické scany
+#### **First week:**
+1. ✅ Go through all problem pages in Bulk Review
+2. ✅ Archive clearly outdated pages
+3. ✅ Tag important pages
+4. ✅ Add more pages to whitelist as needed
+5. ✅ Setup weekly automatic scans
 
-#### **Každý týden:**
-1. ✅ Zkontrolujte dashboard (2 minuty)
-2. ✅ Pokud jsou nové problémové stránky, projednejte je (10-30 minut)
-3. ✅ Exportujte audit log pro reporting (5 minut)
+#### **Each week:**
+1. ✅ Check dashboard (2 minutes)
+2. ✅ Discuss new problem pages (10–30 minutes)
+3. ✅ Export audit log for reporting (5 minutes)
 
-#### **Každý měsíc:**
-1. ✅ Zkontrolujte whitelist - jsou všechny stránky stále relevantní?
-2. ✅ Zkontrolujte detection rules - jsou prahy správně nastavené?
-3. ✅ Vytvořte report pro stakeholdery (audit log export)
+#### **Each month:**
+1. ✅ Check whitelist – are all pages still relevant?
+2. ✅ Check detection rules – are thresholds set right?
+3. ✅ Create report for stakeholders (using audit log export)
 
-### Tipy pro efektivní používání:
+### Tips for effective use:
 
-**💡 Tip 1: Používejte důvody (reasons)**
-- Vždy vyplňujte pole "Reason" při akcích
-- Pomůže to vám i kolegům pochopit rozhodnutí
-- Dobré pro audit trail
+**💡 Tip 1: Use reasons**
+- Always fill the “Reason” field on actions
+- Helps you and colleagues understand decisions
+- Good audit trail
 
-**💡 Tip 2: Začněte s nejhoršími**
-- V "Detected Pages" setřiďte podle "Impact Score"
-- Zpracujte nejdřív stránky s nejvyšším skóre
-- Mají největší vliv na workspace
+**💡 Tip 2: Start with the worst**
+- In “Detected Pages”, sort by “Impact Score”
+- Process pages with highest score first
+- They affect your workspace the most
 
-**💡 Tip 3: Spolupracujte s autory stránek**
-- Než archivujete stránku, zeptejte se autora
-- Možná má důvod, proč je stránka tak, jak je
-- Používejte Confluence @mentions v komentářích
+**💡 Tip 3: Collaborate with page authors**
+- Before archiving, ask the author
+- They might have a reason for the page’s state
+- Use Confluence @mentions in comments
 
-**💡 Tip 4: Exportujte často**
-- Exportujte "Detected Pages" na začátku
-- Sdílejte s týmem pro rozdělení práce
-- Každý může zpracovat své stránky
+**💡 Tip 4: Export often**
+- Export “Detected Pages” at the start
+- Share with team to split the workload
+- Everyone can process their pages
 
-**💡 Tip 5: Nastavte realistické prahy**
-- Nepřehánějte to (např. 30 dní pro stale)
-- Začněte s konzervativními hodnotami
-- Postupně zpřísňujte podle kultury týmu
+**💡 Tip 5: Set realistic thresholds**
+- Don’t go too strict (e.g., 30 days for stale)
+- Start with conservative values
+- Tighten over time based on team culture
 
----
+***
 
-## ❓ Často kladené otázky (FAQ)
+## ❓ Frequently Asked Questions (FAQ)
 
-### Obecné otázky
+### General
 
-**Q: Je Content Guardian zdarma?**
-A: Ano, aplikace je kompletně zdarma.
+**Q: Is Content Guardian free?**
+A: Yes, it’s completely free.
 
-**Q: Funguje to na Confluence Server?**
-A: Ne, jen na Confluence Cloud.
+**Q: Does it work on Confluence Server?**
+A: No, only on Confluence Cloud.
 
-**Q: Potřebuji admin práva?**
-A: Ano, pro instalaci. Pro používání stačí běžná práva.
+**Q: Do I need admin rights?**
+A: Yes, for installation. Normal rights for regular use.
 
-**Q: Kolik stránek může Content Guardian zpracovat?**
-A: Tisíce stránek bez problémů. Scan může trvat déle u velkých workspaces.
+**Q: How many pages can Content Guardian handle?**
+A: Thousands, no issue. Scans may take longer for large workspaces.
 
-### Detekce a scany
+### Detection & Scans
 
-**Q: Jak dlouho trvá scan?**
-A: 10-60 sekund pro běžné workspaces (100-1000 stránek). Může být delší u velmi velkých workspaces.
+**Q: How long does a scan take?**
+A: 10–60 seconds for 100–1000 pages. Longer for really big workspaces.
 
-**Q: Musím spouštět scan ručně?**
-A: Ne, můžete nastavit automatické scany (denně/týdně/měsíčně).
+**Q: Do I have to run scans manually?**
+A: No, you can set up automatic scans (daily/weekly/monthly).
 
-**Q: Proč některé stránky nejsou detekované?**
-A: Možná jsou na whitelistu nebo nesplňují prahy v detection rules.
+**Q: Why are some pages not detected?**
+A: They may be on the whitelist or don’t meet detection thresholds.
 
-**Q: Můžu změnit, co se považuje za "problém"?**
-A: Ano, v Settings → Detection Rules můžete upravit všechny prahy.
+**Q: Can I change what’s considered a “problem”?**
+A: Yes, adjust all thresholds in Settings → Detection Rules.
 
-### Akce a zpracování
+### Actions & Processing
 
-**Q: Co se stane, když archivuji stránku?**
-A: Stránka se přesune do Confluence archivu. Není smazaná, jen skrytá. Můžete ji kdykoliv obnovit.
+**Q: What happens when I archive a page?**
+A: It moves to Confluence archive. Not deleted, just hidden. Can restore any time.
 
-**Q: Můžu vrátit archivaci zpět?**
-A: Ano, v Confluence můžete obnovit archivovanou stránku. Content Guardian to zaznamenává v audit logu.
+**Q: Can I reverse archiving?**
+A: Yes, restore archived pages in Confluence. Content Guardian logs it in audit log.
 
-**Q: Co znamená "Tag" (Označit)?**
-A: Stránka zůstane beze změny, ale označí se jako zkontrolovaná. Příště se nezobrazí jako "New".
+**Q: What does “Tag” mean?**
+A: Page stays as is, but marked as checked. Won’t show as “New” next time.
 
-**Q: Jak odebrat stránku z whitelistu?**
-A: Settings → Whitelist Management → najděte stránku → klikněte "Remove from Whitelist".
+**Q: How to remove a page from whitelist?**
+A: Settings → Whitelist Management → Find page → Click “Remove from Whitelist”
 
-### Bezpečnost a soukromí
+### Security & Privacy
 
-**Q: Kde se ukládají data?**
-A: Vše se ukládá ve Forge Storage v rámci vašeho Confluence Cloud. Žádná data neopouštějí Atlassian infrastrukturu.
+**Q: Where is data stored?**
+A: All is stored in Forge Storage inside your Confluence Cloud. No data leaves Atlassian.
 
-**Q: Čte Content Guardian obsah stránek?**
-A: Ne, čte jen metadata (názvy, datumy, počty zobrazení). Obsah stránek nečte.
+**Q: Does Content Guardian read page content?**
+A: No, only metadata (titles, dates, view counts). It does not read full contents.
 
-**Q: Je to GDPR compliant?**
-A: Ano, aplikace je v souladu s GDPR. Viz Privacy Policy: https://github.com/tom28881/content-guardiand/blob/main/PRIVACY.md
+**Q: Is it GDPR compliant?**
+A: Yes, fully GDPR compliant. See Privacy Policy.
 
-**Q: Kdo může vidět audit log?**
-A: Každý, kdo má přístup k aplikaci (obvykle admini).
+**Q: Who can view the audit log?**
+A: Anyone with access to the app (typically admins).
 
-### Technické problémy
+### Technical Issues
 
-**Q: Aplikace se nenačítá, co dělat?**
+**Q: App isn’t loading, what to do?**
 A:
-1. Obnovte stránku (F5)
-2. Zkuste jiný browser
-3. Zkontrolujte, že máte přístup k Apps v Confluence
-4. Kontaktujte support: tom28881@gmail.com
+1. Refresh the page (F5)
+2. Try another browser
+3. Make sure you have Apps access in Confluence
+4. Contact support: tom28881@gmail.com
 
-**Q: Scan selhal, co teď?**
+**Q: Scan failed, now what?**
 A:
-1. Zkuste spustit scan znovu
-2. Zkontrolujte připojení k internetu
-3. Pokud problém přetrvává, kontaktujte support
+1. Try scanning again
+2. Check your internet connection
+3. If it persists, contact support
 
-**Q: Vidím chybu "Backend is unavailable", co to znamená?**
-A: Backend aplikace není dostupný. Obvykle se vyřeší samo za pár minut. Pokud ne, kontaktujte support.
+**Q: Seeing “Backend is unavailable” error, what does it mean?**
+A: Backend is down. Usually sorts itself out in a few minutes. Contact support if not.
 
-**Q: Export do CSV nefunguje**
-A: Pokud je datová sada velká, zkuste nejdřív filtrovat/omezit výsledky, pak exportovat.
+**Q: CSV export doesn’t work**
+A: If dataset’s too big, try filtering/limiting results first, then export.
 
----
+***
 
-## 🆘 Podpora a pomoc
 
-### Když něco nejde:
+## 📈 Advanced Tips
 
-**1. Zkontrolujte tento návod**
-- Možná jste něco přehlédli
-- FAQ sekce má odpovědi na běžné problémy
-
-**2. GitHub Issues**
-- Nahlaste problém: https://github.com/tom28881/content-guardiand/issues
-- Popište problém co nejdetailněji
-- Přiložte screenshot, pokud možno
-
-**3. Email support**
-- Email: tom28881@gmail.com
-- Odpovídáme do 24 hodin
-- Uveďte:
-  - Co jste dělali
-  - Co se stalo
-  - Chybová hláška (pokud nějaká)
-  - Screenshot
-
-**4. Dokumentace**
-- README: https://github.com/tom28881/content-guardiand/blob/main/README.md
-- Privacy Policy: https://github.com/tom28881/content-guardiand/blob/main/PRIVACY.md
-- Terms: https://github.com/tom28881/content-guardiand/blob/main/TERMS.md
-
----
-
-## 📈 Pokročilé tipy
-
-### Pro power users:
+### For power users:
 
 **1. Bulk Export & Process**
 ```
@@ -819,7 +747,7 @@ Friday:
 ```
 Tips:
 - Use Confluence labels to mark pages
-- Create Confluence page with Content Guardian reports
+- Create a Confluence page with Content Guardian reports
 - Link to Content Guardian from team space
 - Document your content governance policy
 ```
@@ -833,77 +761,48 @@ Use audit log exports to create:
 - Compliance documentation
 ```
 
----
+***
 
-## 🎓 Další kroky
+## 🎓 Next Steps
 
-### Když už jste experti:
+### If you’re advanced:
 
-**1. Optimalizujte detection rules**
-- Experimentujte s prahy
-- Najděte sweet spot pro vaši organizaci
-- Dokumentujte své nastavení
+**1. Optimize detection rules**
+- Experiment with thresholds
+- Find the sweet spot for your org
+- Document settings
 
-**2. Vytvořte content governance policy**
-- Jak často kontrolovat stránky
-- Kdo je zodpovědný
-- Kdy archivovat vs. smazat
-- Content Guardian jako nástroj pro enforcement
+**2. Create a content governance policy**
+- How often to check pages
+- Who is responsible
+- When to archive vs. delete
+- Use Content Guardian for enforcement
 
-**3. Školte tým**
-- Ukažte kolegům, jak používat aplikaci
-- Sdílejte tento návod
-- Vytvořte interní workshop
+**3. Train your team**
+- Show colleagues how to use the app
+- Share this guide
+- Run internal workshops
 
-**4. Sdílejte feedback**
-- Co funguje dobře?
-- Co by mohlo být lepší?
-- Jaké funkce chybí?
-- Kontaktujte: tom28881@gmail.com
+**4. Share feedback**
+- What works well?
+- What could be improved?
+- What features are missing?
+- Contact: tom28881@gmail.com
 
----
+***
 
-## 🎉 Shrnutí
+## 🎉 Summary
 
-Gratulujeme! Nyní víte, jak používat Content Guardian od začátku do konce.
+Congratulations! You now know how to use Content Guardian from start to finish.
 
-### Rychlé připomenutí:
+### Quick recap:
 
-1. **Instalace** - Z Marketplace nebo Developer Console
-2. **První scan** - Klikněte "Scan Now"
-3. **Prohlížení** - Záložka "Detected Pages"
-4. **Zpracování** - Záložka "Bulk Review"
-5. **Historie** - Záložka "Audit Log"
-6. **Nastavení** - Záložka "Settings"
-7. **Pravidelná údržba** - Týdenní kontrola
+1. **Install** – From Marketplace or Developer Console
+2. **First scan** – Click “Scan Now”
+3. **View** – Detected Pages tab
+4. **Processing** – Bulk Review tab
+5. **History** – Audit Log tab
+6. **Settings** – Settings tab
+7. **Regular maintenance** – Weekly checkup
 
-### Klíčové body:
-
-✅ Content Guardian automaticky najde problémy
-✅ Můžete rozhodnout, co s každou stránkou
-✅ Všechny akce jsou zaznamenané (audit trail)
-✅ Můžete přizpůsobit podle vašich potřeb
-✅ Je to zdarma a bezpečné
-
----
-
-## 📞 Kontakt
-
-**Máte otázky? Potřebujete pomoc?**
-
-- 📧 Email: tom28881@gmail.com
-- 🐙 GitHub: https://github.com/tom28881/content-guardiand
-- 🐛 Issues: https://github.com/tom28881/content-guardiand/issues
-- 📚 Dokumentace: https://github.com/tom28881/content-guardiand/blob/main/README.md
-
-**Těšíme se na vaši zpětnou vazbu!**
-
----
-
-**Verze návodu:** 1.0
-**Datum:** November 13, 2025
-**Pro aplikaci:** Content Guardian v2.0.0
-
----
-
-**Hodně štěstí s čištěním vašeho Confluence workspace! 🚀**
+**Good luck cleaning up your Confluence workspace! 🚀**
