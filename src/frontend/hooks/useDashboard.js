@@ -46,7 +46,7 @@ export const useDashboard = () => {
         setMessage({
           appearance: 'error',
           text: /rate limited/i.test(error?.message || '')
-            ? 'Request rate limited – zkuste prosím za pár sekund znovu'
+            ? 'Request rate limited – please try again in a few seconds'
             : friendlyError(error)
         });
       }

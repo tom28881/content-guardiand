@@ -22,7 +22,7 @@ export async function downloadFile({ content, mime, ext, baseName, setMessage })
     if (String(mime).startsWith('text/')) {
       try {
         await navigator.clipboard.writeText(String(content ?? ''));
-        setMessage?.({ appearance: 'warning', text: 'Stahování selhalo, data zkopírována do schránky.' });
+        setMessage?.({ appearance: 'warning', text: 'Download failed, data copied to clipboard.' });
         return true;
       } catch (e2) {
         setMessage?.({ appearance: 'error', text: `Download failed: ${String(err)}` });

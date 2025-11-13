@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Box, Inline, Button, Checkbox, Text } from '@forge/react';
 
-// Jednoduché UI pro přepínání viditelnosti sloupců tabulky Detected Pages.
-// Očekává controlled props: value (mapa klíč->bool) a onChange (setter nové mapy).
-// Neřeší perzistenci; tu může řešit rodič dle potřeby.
+// Simple UI for toggling column visibility in Detected Pages table.
+// Expects controlled props: value (map key->bool) and onChange (setter for new map).
+// Does not handle persistence; parent can handle it as needed.
 const COLUMNS = [
   { key: 'title', label: 'Title' },
   { key: 'space', label: 'Space' },

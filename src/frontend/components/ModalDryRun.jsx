@@ -17,7 +17,7 @@ export default function ModalDryRun({ dryRun, onConfirm, onClose }) {
               <Text>Warnings: {dryRun.counts?.warnings || 0}</Text>
               <Textfield
                 name="reason"
-                label="Důvod (volitelné)"
+                label="Reason (optional)"
                 value={reason}
                 onChange={(e) => setReason(e?.target?.value || '')}
               />

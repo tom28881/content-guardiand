@@ -186,7 +186,7 @@ const DetectedPages = ({ initialFilters, onInitialFiltersConsumed }) => {
           onReset={startReset}
         />
 
-        {/* Přepínače viditelnosti sloupců */}
+        {/* Column visibility toggles */}
         <ColumnsToggle value={visibleColumns} onChange={setVisibleColumns} />
 
         {/* Flags breakdown for current page of results */}

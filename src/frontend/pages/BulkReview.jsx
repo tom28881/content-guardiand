@@ -76,11 +76,11 @@ const BulkReview = () => {
             <Heading level="h500">{current.title}</Heading>
             <Text>Space: {current.spaceKey} • Impact: {current.impactScore} • Updated: {new Date(current.lastUpdated).toLocaleString()}</Text>
             <Inline space="space.200">
-              <Button appearance="primary" onClick={() => doAction('tag')}>Ponechat (Tag)</Button>
-              <Button onClick={() => doAction('whitelist')}>Přidat na whitelist</Button>
-              <Button appearance="warning" onClick={() => doAction('archive')}>Archivovat</Button>
-              <Button onClick={() => setIndex((i) => Math.min(items.length - 1, i + 1))}>Přeskočit</Button>
-              <Button onClick={() => setIndex((i) => Math.max(0, i - 1))}>Zpět</Button>
+              <Button appearance="primary" onClick={() => doAction('tag')}>Keep (Tag)</Button>
+              <Button onClick={() => doAction('whitelist')}>Add to Whitelist</Button>
+              <Button appearance="warning" onClick={() => doAction('archive')}>Archive</Button>
+              <Button onClick={() => setIndex((i) => Math.min(items.length - 1, i + 1))}>Skip</Button>
+              <Button onClick={() => setIndex((i) => Math.max(0, i - 1))}>Back</Button>
             </Inline>
           </Stack>
         </Box>
@@ -90,15 +90,15 @@ const BulkReview = () => {
         {confirm && (
           <Modal onClose={() => setConfirm(null)}>
             <ModalHeader>
-              <ModalTitle>Potvrdit akci</ModalTitle>
+              <ModalTitle>Confirm Action</ModalTitle>
             </ModalHeader>
             <ModalBody>
               <Stack space="space.200">
-                <Text>Akce: {confirm.action}</Text>
-                <Text>Stránka: {confirm.title}</Text>
+                <Text>Action: {confirm.action}</Text>
+                <Text>Page: {confirm.title}</Text>
                 <Textfield
                   name="reason"
-                  label="Důvod (volitelné)"
+                  label="Reason (optional)"
                   value={confirm.reason || ''}
                   onChange={(e) => setConfirm((c) => ({ ...c, reason: e?.target?.value || '' }))}
                 />
@@ -106,8 +106,8 @@ const BulkReview = () => {
             </ModalBody>
             <ModalFooter>
               <Inline space="space.200">
-                <Button appearance="primary" onClick={apply} isLoading={loading}>Potvrdit</Button>
-                <Button onClick={() => setConfirm(null)}>Zrušit</Button>
+                <Button appearance="primary" onClick={apply} isLoading={loading}>Confirm</Button>
+                <Button onClick={() => setConfirm(null)}>Cancel</Button>
               </Inline>
             </ModalFooter>
           </Modal>
